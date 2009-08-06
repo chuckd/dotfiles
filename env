@@ -1,0 +1,15 @@
+# MacPorts Installer addition on 2009-03-25: PATH variable for use with MacPorts.
+export PATH=/usr/local/mysql/bin:$PATH:/opt/local/bin:/opt/local/sbin:/usr/local/bin
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+# MacPorts Installer addition on 2009-03-25: MANPATH variable for use with MacPorts.
+export MANPATH=/opt/local/share/man:$MANPATH
+# Finished adapting your MANPATH environment variable for use with MacPorts.
+
+export EDITOR=vim
+
+export CLICOLOR=1
+
+export JAVA_HOME=/Library/Java/Home
+export FLEX_HOME="/Applications/Adobe Flash Builder Beta/sdks/4.0.0"
+
