@@ -14,9 +14,11 @@ alias tree="tree -C"
 alias ..="cd .."
 
 alias s="cd ~/Sites"
+alias k="cd ~/Sites/katas"
 alias bq="cd ~/Sites/beqik2"
 
-alias sc="script/console"
+alias sc="~/Sites/beqik2/script/console"
+alias sa="~/Sites/beqik2/script/autospec"
 
 # topcommands="history | awk '{a[$2]++}END{for(i in a){print a[i] " " i }}' | sort -rn | head"
 
@@ -27,11 +29,14 @@ function take {
 
 alias t="take t"
 
+alias tl="tail -90 log/development.log"
+alias tlf="tail -f log/development.log"
+
+function gog() {
+  cd `gem environment gemdir`/gems/$1*
+}
+
 function gbt() {
   git branch --track $2 $1/$2
   git checkout $2
-}
-
-function gg() {
-  git commit -a -m "$*"
 }
