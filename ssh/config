@@ -1,0 +1,24 @@
+host chewy
+	Hostname 192.168.0.248
+	User charlie
+
+host serenity
+	Hostname 192.168.0.249
+	User charlie
+
+host drawing
+	Hostname drawing.boschrexroth.com.au
+	User beqik2
+
+host rexpooch 
+	Hostname 192.168.0.254
+	User charlie
+
+host lists
+	Hostname lists.pbc.org.au
+	Port 2254
+	User admin
+
+host aphid.net
+	Hostname aphid.net
+	User aphid

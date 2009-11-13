@@ -1,11 +1,5 @@
-export PATH=~/.gem/ruby/1.8/bin:/usr/local/mysql/bin:$PATH:/usr/local/bin
-
-# Add homebrew:
-export PATH=/Users/chuckd/homebrew/bin:$PATH
-
-# MacPorts Installer addition on 2009-03-25: MANPATH variable for use with MacPorts.
-export MANPATH=/opt/local/share/man:$MANPATH:/usr/local/mysql/man
-# Finished adapting your MANPATH environment variable for use with MacPorts.
+export PATH=/usr/local/mysql/bin:$PATH
+export MANPATH=/usr/local/mysql/man:/usr/local/share/man
 
 export EDITOR=vim
 
