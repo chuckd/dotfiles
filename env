@@ -1,5 +1,5 @@
 export PATH=/usr/local/mysql/bin:$PATH
-export MANPATH=/usr/local/mysql/man:/usr/local/share/man
+export MANPATH=/usr/local/mysql/man: # trailing hash means MANPATH doesn't replace /etc/manpaths
 
 export EDITOR=vim
 
