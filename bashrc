@@ -15,12 +15,12 @@ export GOROOT=`brew --prefix`/Cellar/go/HEAD
 export GOARCH=amd64
 export GOOS=darwin
 
+PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " (%s)")\$ '
+
 #
 # config
 #
 source `brew --prefix`/etc/git-completion.bash
-
-PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " (%s)")\$ '
 
 bind "set bell-style none"
 bind "set show-all-if-ambiguous On"
