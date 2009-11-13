@@ -14,3 +14,6 @@ export CLICOLOR=1
 export JAVA_HOME=/Library/Java/Home
 export FLEX_HOME="/Applications/Adobe Flash Builder Beta 2/sdks/4.0.0"
 
+export GOROOT=`brew --prefix`/Cellar/go/HEAD
+export GOARCH=amd64
+export GOOS=darwin
