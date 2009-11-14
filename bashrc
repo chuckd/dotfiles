@@ -2,7 +2,9 @@
 # env
 #
 export PATH=/usr/local/mysql/bin:$PATH
-export MANPATH=/usr/local/mysql/man: # trailing hash means MANPATH doesn't replace /etc/manpaths
+
+# trailing hash below means MANPATH doesn't replace /etc/manpaths
+export MANPATH=/usr/local/mysql/man:
 
 export EDITOR=vim
 
