@@ -8,7 +8,7 @@ Dir.chdir File.dirname(__FILE__) do
   dotfiles_dir = Dir.pwd.sub(home + '/', '')
 
   Dir['*'].each do |file|
-    next if file == 'link.rb'
+    next if file =~ /\./
     target = File.join(home, ".#{file}")
     unless File.exist? target
       system %[ln -vsf #{File.join(dotfiles_dir, file)} #{target}]

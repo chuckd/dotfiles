@@ -1,0 +1,96 @@
+Set tap to click
+Smaller dock
+Software updates
+Remove icons from dock & menu bar
+"Minimize windows into application icon"
+Keyboard shortcuts -> All controls
+Pair iPhone
+Hide Safari bookmarks bar
+Rearrange screens
+Install Developer Tools
+Install git from package
+/usr/local $ git clone git@github.com:chuckd/homebrew.git
+Set Safari to open Top Sites on launch
+Enable Web sharing, add "Include /Users/chuckd/Sites/sites.conf" to /etc/apache2/httpd.conf
+Install BeQIK2, Flex Monkey, Balsamiq Mockups
+After installing passenger gem, run passenger-install-apache2-module, add lines to httpd.conf
+ -> but PassengerRuby must be changed to /Users/chuckd/.rvm/bin/ruby-1.8.7-p174
+Stop WD SmartWare automounting
+ -> /etc/fstab: UUID=CF13F5E3-21B4-391A-8E7A-61487FE0364D none hfs rw,noauto 0 0
+Sync MobileMe
+Setup Viscosity with Rexroth connection: server 202.80.145.225 port 1195
+Copy Things Library (~/Library/Application Support/Cultured Code/)
+Setup printers: Harrison, Melon & LaFawnduh
+growlnotify: run Extras/install.sh from Growl disk image
+Synchronize DropBox
+Install & Update CS4
+
+--
+
+RubyGems:
+$ sudo gem install rvm
+Create .rvmrc containing rvm_archflags="-arch x86_64"
+$ rvm-install
+$ rvm install 1.8.7
+$ ruby 1.8.7 --default
+
+passenger
+gemcutter
+mysql
+rails
+whenever
+rspec
+rspec-rails
+ZenTest
+autotest-fsevent
+
+--
+
+Copy from backup:
+~/Sites,Documents,Music,Pictures
+Copy .ssh, .git, .vimrc, .autotest, .autotest_images .rvmrc and dotfiles from ~
+Copy bookmarks for Safari
+Copy MySQL databases (/usr/local/mysql/data)
+
+--
+
+Homebrew packages:
+ack
+git
+htop
+most
+tree
+wget
+
+--
+
+Download packages/apps:
+Tweetie
+Remote Desktop Client from Microsoft
+ClickToFlash
+SIMBL & TerminalColours (http://github.com/timmfin/terminalcolours)
+MySQL, plus 64-bit PrefPane from http://www.swoon.net/site/software.html
+Querious
+DropBox
+VMWare Fusion
+Gity
+FlashBuilder
+iWork (copied to Downloads/Apps/iWork 09.mpg from DVD)
+Viscosity
+Things
+GitX
+ServiceCapture
+Growl
+DaisyDisk
+
+--
+
+Install Curio
+Install Accordance
+
+--
+
+To make completely portable:
+
+Move Things library to DropBox
+Push ~/Dotfiles to GitHub
