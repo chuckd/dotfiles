@@ -17,7 +17,6 @@ export GOROOT=`brew --prefix`/Cellar/go/HEAD
 export GOARCH=amd64
 export GOOS=darwin
 
-
 #
 # config
 #
