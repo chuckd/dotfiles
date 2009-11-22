@@ -10,7 +10,7 @@ Rearrange screens
 Install Developer Tools
 Install git from package
 /usr/local $ git clone git@github.com:chuckd/homebrew.git
-Set Safari to open Top Sites on launch
+Set Safari to open Top Sites on launch & open external links in tabs
 Enable Web sharing, add "Include /Users/chuckd/Sites/sites.conf" to /etc/apache2/httpd.conf
 Install BeQIK2, Flex Monkey, Balsamiq Mockups
 After installing passenger gem, run passenger-install-apache2-module, add lines to httpd.conf
@@ -82,15 +82,15 @@ GitX
 ServiceCapture
 Growl
 DaisyDisk
-
---
-
-Install Curio
-Install Accordance
+iLife
+Curio
+Evernote
+Accordance + NIV
+Mailplane
 
 --
 
 To make completely portable:
 
-Move Things library to DropBox
-Push ~/Dotfiles to GitHub
+✓ Push ~/Dotfiles to GitHub
+✓ Move Things library to DropBox
