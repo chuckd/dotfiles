@@ -6,12 +6,11 @@ export PATH=/usr/local/mysql/bin:$PATH
 # trailing hash below means MANPATH doesn't replace /etc/manpaths
 export MANPATH=/usr/local/mysql/man:
 
-export EDITOR=vim
-
 export CLICOLOR=1
-
-export JAVA_HOME=/Library/Java/Home
+export EDITOR=vim
 export FLEX_HOME="/Applications/Adobe Flash Builder Beta 2/sdks/4.0.0"
+export JAVA_HOME=/Library/Java/Home
+export RUBYOPT=rubygems
 
 export GOROOT=`brew --prefix`/Cellar/go/HEAD
 export GOARCH=amd64
