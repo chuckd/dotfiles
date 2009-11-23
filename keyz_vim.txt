@@ -1,0 +1,70 @@
+#
+# Vim
+#
+:sp
+:cn
+
+# Buffers
+:ls
+:bn
+:b 5 # open buffer five
+
+# Navigation
+|       # (pipe) go to column
+; ,     # repeat right/left f F t or T
++ -     # like j k but going to first non-blank character
+<N>%    # go to line percent way down file
+W B E   # blank-separated words forward/back
+) ( } { # forward/back by sentence/paragraph
+[( [{   # back to unclosed ( or {
+]( ]{   # forward to unclosed ( or {
+g0 g$   # go to start/end of _screen_ line (when current line is wrapped)
+gk gj   # up/down by _screen_ line
+
+# Searching
+n N     # repeat previous in same/opposite direction
+#       # like *, but search backward for current identifier
+gd      # go to definition for current identifier
+
+# Marks & motions
+m<c>    # store cursor position in mark <c>
+`<c>    # return to mark <c>
+'0      # return to where you were at last quit
+``      # return to position before the last jump
+:marks  # print the active marks
+^O ^I # move back/forward in jump list
+:jumps  # print the jump list
+
+# Scrolling
+^E ^Y   # scroll window up/down by line
+^U ^D   # scroll window up/down by 1/2 screen
+z<CR>   # redraw with current line at top of window
+z. z-   # redraw with current line at center/bottom of window
+
+# Insert mode keys
+^W      # delete word before the cursor
+:r! cmd # insert standard output of cmd
+
+# Deleting
+gJ      # join without adding spaces
+X       # backspace
+:<n>d x # delete <n> lines into register x
+
+# Copying & moving text
+"<c>    # use register <c> for next delete/yank/put
+]p [p   # put contents of register after/before cursor, & adjust indent
+
+# Changing text
+~       # switch case for <count> characters (also use in visual mode)
+v_u v_U # up/downcase highlighted text
+gq      # format length of lines to textwidth
+:ce :ri # center/right-align lines
+
+# Complex changes
+&       # repeat previous :s on current line
+
+# Key mapping
+:mksession <file> # store session to file
+
+# Undo/Redo commands
+^R      # redo
