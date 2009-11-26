@@ -24,15 +24,14 @@ Setup printers: Harrison, Melon & LaFawnduh
 growlnotify: run Extras/install.sh from Growl disk image
 Synchronize DropBox
 Install & Update CS4
+Install fish
+Check "Use option as meta key" in Terminal > Settings > Keyboard
+Set Caps Lock to Control in System Preferences > Keyboard > Keyboard > Modifier Keys
 
 --
 
 RubyGems:
-$ sudo gem install rvm
-Create .rvmrc containing rvm_archflags="-arch x86_64"
-$ rvm-install
-$ rvm install 1.8.7
-$ ruby 1.8.7 --default
+sudo gem update --system
 
 passenger
 gemcutter
@@ -55,6 +54,7 @@ Copy MySQL databases (/usr/local/mysql/data)
 --
 
 Homebrew packages:
+fish
 ack
 git
 htop
