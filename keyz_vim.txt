@@ -25,6 +25,7 @@ gk gj   # up/down by _screen_ line
 n N     # repeat previous in same/opposite direction
 #       # like *, but search backward for current identifier
 gd      # go to definition for current identifier
+[I      # list all lines that match the keyword under the cursor
 
 # Marks & motions
 m<c>    # store cursor position in mark <c>
@@ -68,3 +69,15 @@ gq      # format length of lines to textwidth
 
 # Undo/Redo commands
 ^R      # redo
+
+# Indenting
+==      # match indent of above line to current line
+=G      # reindent block
+
+#
+# Grokking Vim
+#
+Buffers
+Viewports
+Jump list
+Argument list
