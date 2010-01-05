@@ -9,5 +9,5 @@ if test (uname -s) = "Darwin"
   set -x GEM_PATH $GEM_HOME
   set -x JAVA_HOME /Library/Java/Home
   set -x MANPATH /usr/local/share/man /usr/X11/man /usr/share/man
-  set -x PATH /usr/local/bin ~/.gem/ruby/1.8/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/flex/bin
+  set -x PATH /usr/local/bin $GEM_HOME/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/flex/bin /usr/local/mysql/bin
 end

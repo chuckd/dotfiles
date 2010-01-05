@@ -16,5 +16,5 @@ function fish_prompt --description 'Write out the prompt'
 
   #printf '%s$%s ' (set_color -o $fish_color_cwd) (set_color normal)
 
-  printf '%s> ' (set_color black)
+  printf '%s> ' (set_color normal)
 end

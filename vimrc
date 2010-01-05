@@ -11,13 +11,11 @@ cmap w!! %!sudo tee > /dev/null % " write with sudo
 
 set autoindent
 set autoread
-set cursorline
 set directory=~/.vim/sessions/
 set expandtab
 set grepprg=ack\ -a
 set incsearch
 set laststatus=2
-set list
 set nocompatible
 set number
 set smarttab
@@ -37,9 +35,6 @@ nnoremap <silent> k gk
 nnoremap <silent> j gj
 
 syntax enable
-
-:au BufWinEnter * let w:m1=matchadd('Search', '\%<101v.\%>97v', -1)
-:au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>100v.\+', -1)
 
 nmap <F5> <ESC>:call LoadSession()<CR>
 let s:sessionloaded = 0

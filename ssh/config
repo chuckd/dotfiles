@@ -6,11 +6,15 @@ host serenity
 	Hostname 192.168.0.249
 	User charlie
 
+host wallace
+    Hostname beqik2.boschrexroth.com.au
+    User beqik2
+
 host drawing
 	Hostname drawing.boschrexroth.com.au
-	User beqik2
+	User bruce
 
-host rexpooch 
+host rexpooch
 	Hostname 192.168.0.254
 	User charlie
 
