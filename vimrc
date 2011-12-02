@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 autocmd BufWritePre * :%s/\s\+$//e
 
 au BufNewFile,BufRead *.mxml set filetype=mxml
@@ -32,6 +34,8 @@ set smartcase
 set gdefault
 set showmatch
 
+let mapleader=","
+
 " Edit vimrc \ev, gvimrc \gv
 nnoremap <silent> <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>
 nnoremap <silent> <Leader>gv :tabnew<CR>:e ~/.gvimrc<CR>
@@ -49,6 +53,7 @@ vnoremap <C-j> :m'>+<CR>gv=gv
 vnoremap <C-k> :m-2<CR>gv=gv
 
 syntax enable
+filetype plugin indent on
 
 nmap <F5> <ESC>:call LoadSession()<CR>
 let s:sessionloaded = 0
