@@ -29,13 +29,12 @@ plugins=(git cap osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/lib/ruby/gems/1.9.1/bin:/Users/chuckd/bin:/usr/local/flex/bin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=/usr/local/lib/ruby/gems/1.9.1/bin:/Users/chuckd/bin:/usr/local/flex/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 export EDITOR=vim
 
-alias reweb="sudo apachectl -k restart && sleep 0.2 && tail /var/log/apache2/error_log"
 alias tree="tree -C"
 
-alias beq="cd ~/Dropbox/beqik2"
+alias bq="cd ~/Dropbox/beqik2"
 alias g="git status --short"
 
 zstyle ':completion:*' use-cache on
