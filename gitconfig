@@ -12,9 +12,11 @@
 	ui = auto
 [core]
 	autocrlf = false
-        excludesfiles = /Users/chuckd/.gitignore
 [push]
 	default = current
 [github]
 	token = 5220d260df36b62ff836a4c0e8c0dfbc
 	user = chuckd
+[https]
+[mergetool]
+	keepBackup = true

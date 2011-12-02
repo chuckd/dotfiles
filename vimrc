@@ -1,9 +1,5 @@
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Quick comment/uncomment with c and u
-autocmd BufNewFile,BufRead *.rb,*.py,*.pl,*.sh vmap u :-1/^#/s///<CR>
-autocmd BufNewFile,BufRead *.rb,*.py,*.pl,*.sh vmap c :-1/^/s//#/<CR>
-
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
 
@@ -14,7 +10,6 @@ set autoread
 set directory=~/.vim/sessions/
 set expandtab
 set grepprg=ack\ -a
-set incsearch
 set laststatus=2
 set nocompatible
 set number
@@ -26,6 +21,17 @@ set ssop-=options " don't save options when I save a session
 set tabstop=4
 set wildmenu
 
+"sane regex by default
+nnoremap / /\v
+vnoremap / /\v
+
+"better search defaults
+set ignorecase
+set incsearch
+set smartcase
+set gdefault
+set showmatch
+
 " Edit vimrc \ev, gvimrc \gv
 nnoremap <silent> <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>
 nnoremap <silent> <Leader>gv :tabnew<CR>:e ~/.gvimrc<CR>
@@ -33,6 +39,14 @@ nnoremap <silent> <Leader>gv :tabnew<CR>:e ~/.gvimrc<CR>
 " Up and down are more logical with g..
 nnoremap <silent> k gk
 nnoremap <silent> j gj
+
+" Move lines up and down
+nnoremap <C-j> :m+<CR>==
+nnoremap <C-k> :m-2<CR>==
+inoremap <C-j> <Esc>:m+<CR>==gi
+inoremap <C-k> <Esc>:m-2<CR>==gi
+vnoremap <C-j> :m'>+<CR>gv=gv
+vnoremap <C-k> :m-2<CR>gv=gv
 
 syntax enable
 
@@ -48,4 +62,3 @@ function SaveSession()
   end
 endfunction
 autocmd VimLeave * call SaveSession()
-

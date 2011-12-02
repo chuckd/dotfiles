@@ -1,13 +1,25 @@
-host chewy
-	Hostname 192.168.0.248
-	User charlie
+host beqik2transfer
+    Hostname beqik2transfer
+    User beqik2
 
-host serenity
-	Hostname 192.168.0.249
-	User charlie
+host s-masterpak
+    Hostname s-masterpak
+    User cdale
+
+host beqik2db
+    Hostname beqik2db
+    User beqik2
+
+host beqik2app1
+    Hostname beqik2app1
+    User beqik2
+
+host beqik2
+    Hostname 10.180.46.24
+    User beqik2
 
 host wallace
-    Hostname beqik2.boschrexroth.com.au
+    Hostname wallace
     User beqik2
 
 host drawing
@@ -15,7 +27,7 @@ host drawing
 	User bruce
 
 host rexpooch
-	Hostname 192.168.0.254
+	Hostname 10.180.47.254
 	User charlie
 
 host lists
@@ -26,3 +38,8 @@ host lists
 host aphid.net
 	Hostname aphid.net
 	User aphid
+
+host beqik2sgp
+    User beqik2
+    Hostname beqik2sgp
+    ProxyCommand ssh -q betty nc %h %p
