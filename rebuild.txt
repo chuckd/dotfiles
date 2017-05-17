@@ -12,7 +12,7 @@ Install git from package
 /usr/local $ git clone git@github.com:chuckd/homebrew.git
 Set Safari to open Top Sites on launch & open external links in tabs
 Enable Web sharing, add "Include /Users/chuckd/Sites/sites.conf" to /etc/apache2/httpd.conf
-Install BeQIK2, Flex Monkey, Balsamiq Mockups
+Install BQ, Flex Monkey, Balsamiq Mockups
 After installing passenger gem, run passenger-install-apache2-module, add lines to httpd.conf
  -> but PassengerRuby must be changed to /Users/chuckd/.rvm/bin/ruby-1.8.7-p174
 Stop WD SmartWare automounting
